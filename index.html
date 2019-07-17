@@ -4,24 +4,112 @@
   <title>destinations</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <style type="text/css">
-  	/* Add your CSS classes below */
+  	.mountain {
+  background-image: url("https://thumbs.gfycat.com/VibrantTidyAmericancrocodile-size_restricted.gif");
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+.h1 {
+  text-align: center;
+  font-size:50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.h2 {
+  text-align: center;
+  font-size:30px;
+  font-family: Verdana;
+}
+
+.section {
+  background-color: #80cee1;
+}
+
+.small-text {
+  font-size: 17px;
+}
+
+ 
+.hidden {
+  display: none;
+}
+
+.h3 {
+  text-align: center;
+  font-size:20px;
+  font-family: Verdana;
+}
 
   </style>
 </head>
 
 <body>
   
+  <section class="hero is-primary is-fullheight mountain">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title h1">
+        <p></p>
+What is Your Next Destination?
+
+      </h1>
+    </div>
+  </div>
+
+</section>
+<p class="h2"><em>“You only live once, but if you do it right, once is enough.”</p></em>
+<body>
   <section class="section">
-      <div class="container">
-        <h1 class="title">destinations</h1>
-        <h2 class="subtitle">
-          destinations subtitle
-        </h2>
-      </div>
-    </section>
+    <h1 class="h1"><em>Do you prefer Beach, City or Mountain?
+      </h1>
+      
+      </em><h3 class="h3">
+    Instruction: Click on the image to see the result!</h3>
+
+      <div class="columns is-mobile">
+        <div class="column">
+          <img onclick="clicked('1')" src="https://www.vivutravel.com/images/blog3/vietnam-beach-holiday.jpg">
+          <p>Beach</p>
+    <p class="hidden" 
+       id="1">
+            One of the best beaches of South-east Asia is Nha Trang in Vietnam. This beach has the best scuba diving experience to offer in the country. You can also find a number of shops lined up at the beach to buy some souvenirs from. What’s more is that you can also visit the renowned National Oceanographic Museum of Vietnam if you have more days in this place.
+          </p>
+   </div>
+        <div class="column">
+          <img onclick="clicked('2')" src="http://travel-dmc.com/wp-content/uploads/2019/05/Top-5-Tourist-attractions-in-Barcelona.jpg">
+          <p>City</p><p class="hidden" 
+       id="2">
+            If you want to be in and amongst the excitement, Barcelona is a perfect place. There are plenty of hotels near to the bustling Las Ramblas. For a quieter location, stay in the picturesque Gothic Quarter. La Barceloneta beach is a short walk from the centre and lined with bars, entertainers and soft sand perfect for sitting with a sangria. If you decide to stay for longer, take a day trip into the Pyrenees Mountains for hiking trails with unbelievable views. A city break with a beach, what could be more perfect? Gaudi’s city of Barcelona is a great destination for the whole family if they love sun, sea, sightseeing and sport. Check out the Camp Nou and 1992 Olympic stadium. Explore the bizarre curiosities of Park Güell, the café culture of the thriving Las Ramblas and the Salvador Dali museum.
+          </p>
+        </div>
+        <div class="column">
+          <img onclick="clicked('3')" src="https://www.georgianjournal.ge/images/georgianews/2015/December/Politics/shxara1.jpg">
+          <p> Mountain</p><p class="hidden" 
+       id="3">
+            The best way to witness the diversity of Georgia’s terrain is on its hiking trails, which wind through the Greater Caucasus mountain range dividing Europe from Asia
+Making a majestic swåeep across northern Georgia, the Caucasus Mountains are ideal for walking and are interspersed with idyllic villages punctuated by Medieval stone watchtowers.These beautiful green mountains can best be explored by taking a trip up the Great Georgian Military Highway which begins in Tbilisi and then leads northwards passing Mtskheta, with its superb church, and Ananauri, an ancient fortress, once home to the Aragvi dynasty.
+          </p>
+        </div>
+    </div>
+  </section>
+</body>
+<p>Reference</p>
+<p>https://traveltriangle.com/blog/budget-beaches-south-east-asia/</p>
+<p>https://www.cntraveler.com/galleries/2016-03-31/the-50-most-beautiful-places-in-europe</p>  
+<p>https://www.travelrepublic.co.uk/blog/best-european-city-breaks-2019</p>
 
   <script src="js/scripts.js">
-  	/* Add your Javascript below */
+  	function clicked(elem_id) {
+  paragraphs = document.getElementsByClassName("hidden");
+  for (var i=0 ; i< paragraphs.length; i++) {paragraphs[i].style.display="none"}
+  
+  
+  document
+    .getElementById(elem_id)
+    .style
+    .display = "block"
+}
   </script>
 </body>
 </html>
